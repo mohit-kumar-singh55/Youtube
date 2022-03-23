@@ -40,7 +40,7 @@ const Header = () => {
                     <span>
                         <BellIcon className={`h-6 stroke-1 cursor-pointer`} />
                     </span>
-                    <img className='w-[35px] h-[35px] rounded-full' src="https://yt3.ggpht.com/yti/APfAmoFuyHWZVQb4EHeZbbKyNwaBi-_YpZ2SKA6LHm3Vpg=s88-c-k-c0x00ffffff-no-rj-mo" alt="user" />
+                    <img className='w-[35px] h-[35px] rounded-full cursor-pointer' src="https://yt3.ggpht.com/yti/APfAmoFuyHWZVQb4EHeZbbKyNwaBi-_YpZ2SKA6LHm3Vpg=s88-c-k-c0x00ffffff-no-rj-mo" alt="user" />
                 </div>
             </div>
         </nav>
