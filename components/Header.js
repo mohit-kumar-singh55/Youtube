@@ -12,7 +12,7 @@ const Header = () => {
             <div className={`flex justify-between items-center w-full gap-10 p-2 px-8 ${styles.custom_nav}`}>
                 {/* Left */}
                 <div className='flex items-center justify-between'>
-                    <MenuIcon className='w-7 h-7 cursor-pointer' />
+                    <MenuIcon className='w-7 h-7 cursor-pointer stroke-1' />
                     <div className={`relative w-24 h-10 ml-6 cursor-pointer ${styles.custom_logo}`}>
                         <Image src={youtube} alt="logo" className='invert' objectFit='contain' layout='fill' />
                     </div>
