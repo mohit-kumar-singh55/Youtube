@@ -1,0 +1,33 @@
+@media screen and (max-width: 590px) {
+    .custom_nav {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .custom_search {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .custom_logo {
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .custom_nav {
+        gap: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .custom_searchIcon {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
