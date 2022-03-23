@@ -16,3 +16,9 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    min-height: 100vh;
+    background-color: #181818;
+    color: #FAFAFA;
+}

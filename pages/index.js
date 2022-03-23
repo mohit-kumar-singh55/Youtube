@@ -4,16 +4,16 @@ const Home = () => {
   return (
     <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Youtube</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        Youtube Clonee
+        
       </main>
 
     </div>
   )
 }
 
-export default Home
+export default Home;
