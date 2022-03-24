@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { BellIcon, MenuIcon, SearchIcon, VideoCameraIcon, ViewGridIcon } from "@heroicons/react/outline";
 import { MicrophoneIcon } from "@heroicons/react/solid";
-import youtube from "../public/assets/youtube.png";
+import youtube from "../../public/assets/youtube.png";
 import styles from "./Header.module.css";
 
 const Header = () => {
