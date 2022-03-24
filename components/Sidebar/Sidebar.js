@@ -8,7 +8,7 @@ const Sidebar = () => {
 
     return (
         <aside className='h-screen overflow-y-scroll bg-[#202020]'>
-            <div className='w-[280px] flex items-center justify-start flex-col gap-1 truncate'>
+            <div className='w-[250px] flex items-center justify-start flex-col gap-1 truncate'>
                 {/* section */}
                 <div className='w-full flex items-center justify-start flex-col py-2'>
                     {/* Home */}
