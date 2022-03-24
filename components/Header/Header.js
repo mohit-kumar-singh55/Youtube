@@ -4,18 +4,21 @@ import { BellIcon, MenuIcon, SearchIcon, VideoCameraIcon, ViewGridIcon } from "@
 import { MicrophoneIcon } from "@heroicons/react/solid";
 import youtube from "../../public/assets/youtube.png";
 import styles from "./Header.module.css";
+import Link from 'next/link';
 
 const Header = () => {
     return (
 
         <nav className='bg-[#202020] sticky top-0 z-50'>
-            <div className={`flex justify-between items-center w-full gap-10 p-2 px-8 ${styles.custom_nav}`}>
+            <div className={`flex justify-between items-center w-full gap-10 p-2 px-6 ${styles.custom_nav}`}>
                 {/* Left */}
                 <div className='flex items-center justify-between'>
                     <MenuIcon className='w-7 h-7 cursor-pointer stroke-1' />
-                    <div className={`relative w-24 h-10 ml-6 cursor-pointer ${styles.custom_logo}`}>
-                        <Image src={youtube} alt="logo" className='invert' objectFit='contain' layout='fill' />
-                    </div>
+                    <Link href="/">
+                        <div className={`relative w-24 h-10 ml-6 cursor-pointer ${styles.custom_logo}`}>
+                            <Image src={youtube} alt="logo" className='invert' objectFit='contain' layout='fill' />
+                        </div>
+                    </Link>
                 </div>
 
                 {/* Center */}
