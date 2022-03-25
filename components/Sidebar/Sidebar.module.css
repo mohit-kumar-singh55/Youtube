@@ -1,0 +1,5 @@
+@media screen and (max-width: 1024px) {
+    .custom_sidebar {
+        position: absolute;
+    }
+}
