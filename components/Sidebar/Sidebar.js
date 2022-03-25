@@ -1,9 +1,7 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { CashIcon, ColorSwatchIcon, CubeTransparentIcon, DesktopComputerIcon, HomeIcon, LibraryIcon, RefreshIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import styles from "./Sidebar.module.css";
-import { useEffect } from 'react';
 import { useRecoilValue } from 'recoil';
 import { sidebarToggle } from "../../atoms/SidebarAtom";
 
@@ -13,11 +11,12 @@ const Sidebar = () => {
     const toggle = useRecoilValue(sidebarToggle);
 
     useEffect(() => {
+        // sidebar onclick of burger icon
         if (toggle) {
-            sidebarRef.current.classList.remove("-translate-x-full");
+            sidebarRef.current.classList.add("-translate-x-full");
         }
         else {
-            sidebarRef.current.classList.add("-translate-x-full");
+            sidebarRef.current.classList.remove("-translate-x-full");
         }
     }, [toggle])
 
