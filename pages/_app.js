@@ -4,11 +4,11 @@ import { RecoilRoot } from "recoil";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <RecoilRoot>
+    <RecoilRoot>
+      <Layout>
         <Component {...pageProps} />
-      </RecoilRoot>
-    </Layout>
+      </Layout>
+    </RecoilRoot>
   )
 }
 

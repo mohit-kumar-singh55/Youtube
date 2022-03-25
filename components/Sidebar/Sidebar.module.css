@@ -1,5 +1,6 @@
-@media screen and (max-width: 1024px) {
-    .custom_sidebar {
-        position: absolute;
-    }
+.custom_sidebar {
+    position: absolute;
 }
+
+
+@media screen and (max-width: 1024px) {}
