@@ -14,21 +14,15 @@ const Sidebar = () => {
 
     useEffect(() => {
         if (toggle) {
-            sidebarRef.current.classList.remove(`${styles.custom_sidebar}`);
-            sidebarRef.current.classList.add("translate-x-full");
             sidebarRef.current.classList.remove("-translate-x-full");
         }
         else {
-            sidebarRef.current.classList.add(`${styles.custom_sidebar}`);
             sidebarRef.current.classList.add("-translate-x-full");
-            sidebarRef.current.classList.remove("translate-x-full");
         }
-
-        console.log(toggle);
     }, [toggle])
 
     return (
-        <aside ref={sidebarRef} className={`h-screen overflow-y-scroll bg-[#202020] transition-transform`}>
+        <aside ref={sidebarRef} className={`h-screen absolute overflow-y-scroll bg-[#202020] transition-transform`}>
             <div className='w-[250px] flex items-center justify-start flex-col gap-1 truncate'>
                 {/* section */}
                 <div className='w-full flex items-center justify-start flex-col py-2'>
