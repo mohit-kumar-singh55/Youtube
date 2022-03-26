@@ -21,7 +21,7 @@ const Sidebar = () => {
     }, [toggle])
 
     return (
-        <aside ref={sidebarRef} className={`h-screen absolute overflow-y-scroll bg-[#202020] transition-transform`}>
+        <aside ref={sidebarRef} className={`h-screen absolute overflow-y-scroll bg-[#202020] -translate-x-full transition-transform`}>
             <div className='w-[250px] flex items-center justify-start flex-col gap-1 truncate'>
                 {/* section */}
                 <div className='w-full flex items-center justify-start flex-col py-2'>
