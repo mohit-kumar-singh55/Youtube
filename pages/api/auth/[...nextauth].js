@@ -26,12 +26,16 @@ import { } from "../../../lib/youtube";
 
 
 export default NextAuth({
-    // Configure one or more authentication providers
+    // Configure one or more authentication providers,
     providers: [
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            // authorization: "https://www.googleapis.com/auth/youtube.readonly",
+            authorization: {
+                params: {
+                    scope: "https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly"
+                }
+            },
         }),
         // ...add more providers here
     ],
