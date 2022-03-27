@@ -3,6 +3,7 @@ import { useSession } from "next-auth/react";
 
 const Home = () => {
   const { data: session } = useSession();
+  console.log(session);
 
   return (
     <div>
@@ -12,7 +13,7 @@ const Home = () => {
       </Head>
 
       <main>
-        {session.user.name}
+        {session?.user?.name}
       </main>
 
     </div>
