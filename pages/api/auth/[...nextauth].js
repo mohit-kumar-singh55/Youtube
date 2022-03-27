@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+import { } from "../../../lib/youtube";
 
 // async function refreshAccessToken(token) {
 //     try {
@@ -30,6 +31,7 @@ export default NextAuth({
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+            // authorization: "https://www.googleapis.com/auth/youtube.readonly",
         }),
         // ...add more providers here
     ],
@@ -50,9 +52,7 @@ export default NextAuth({
             }
 
             // Return the token if it is not expired yet
-            if (Date.now() < token.accessTokenExpires) {
-                return token;
-            }
+            if (Date.now() < token.accessTokenExpires) return token;
 
             // Access Token has expired, so we need to refresh it...
             // return await refreshAccessToken(token);
