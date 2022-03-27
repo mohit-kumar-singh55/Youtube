@@ -1,9 +1,20 @@
 import Head from 'next/head';
 import { useSession } from "next-auth/react";
+import { useEffect } from 'react';
 
 const Home = () => {
   const { data: session } = useSession();
-  console.log(session);
+
+  const fetchUser = async () => {
+    const url = `https://youtube.googleapis.com/youtube/v3/channels?part=snippet&mine=true&key=`;
+    const res = await fetch(url)
+
+    console.log(res);
+  }
+
+  useEffect(() => {
+    fetchUser();
+  }, [])
 
   return (
     <div>
